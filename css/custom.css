@@ -17,6 +17,7 @@
   }
   a{
     color: blueviolet;
+    
   }
 
 .beach {
@@ -84,7 +85,7 @@
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
-  padding: 50px 10px 10px 0px;
+  padding: 60px 10px 10px 0px;
 
 }
 #ft{
@@ -503,3 +504,149 @@ opacity: 0;
 @keyframes hide-caret {
   from, to { border-color: transparent }
 }
+.skills-heading{
+  font-size: 30px;
+}
+
+.html-progress,.css-progress,.js-progress, .ajs-progress{
+  background-color: black;
+  width: 500px;
+  height: 20px;
+  display: inline-block;
+}
+.progress-value {
+  background-color: lightgray;
+  width: 500px;
+  height: 20px;
+  display: inline-block; 
+  color:black;
+  font-weight: 24px;
+  font-style: italic;
+  text-align: center;
+  animation: grow 3s ease-in-out forwards;
+animation-iteration-count: 3;
+  -webkit-animation:grow 2s ease-in-out forwards;
+}
+
+/* animation */
+@keyframes grow {
+from {
+  width: 0;
+  
+}
+to {
+  width: 95%;
+}
+}
+@-webkit-keyframes grow {
+from {
+  width: 0;
+  
+}
+to {
+  width: 95%;
+ 
+}
+}
+@keyframes growcss {
+  from {
+    width: 0;
+    
+  }
+  to {
+    width: 85%;
+  }
+  }
+  @-webkit-keyframes growcss {
+  from {
+    width: 0;
+    
+  }
+  to {
+    width: 85%;
+   
+  }
+  }
+
+.css-value {
+  background-color: lightgray;
+  width: 500px;
+  height: 20px;
+  display: inline-block; 
+  color:black;
+  font-weight: 24px;
+  font-style: italic;
+  text-align: center;
+  animation: growcss 3s ease-in-out forwards;
+animation-iteration-count: 3;
+  -webkit-animation:growcss 2s ease-in-out forwards;
+}
+
+@keyframes growjs {
+  from {
+    width: 0;
+    
+  }
+  to {
+    width: 65%;
+  }
+  }
+  @-webkit-keyframes growjs {
+  from {
+    width: 0;
+    
+  }
+  to {
+    width: 65%;
+   
+  }
+  }
+
+.js-value {
+  background-color: lightgray;
+  width: 500px;
+  height: 20px;
+  display: inline-block; 
+ color:black;
+ font-weight: 24px;
+ font-style: italic;
+  text-align: center;
+  animation: growjs 3s ease-in-out forwards;
+animation-iteration-count: 3;
+  -webkit-animation:growjs 2s ease-in-out forwards;
+}
+
+@keyframes growajs {
+  from {
+    width: 0;
+    
+  }
+  to {
+    width: 70%;
+  }
+  }
+  @-webkit-keyframes growajs {
+  from {
+    width: 0;
+    
+  }
+  to {
+    width: 70%;
+   
+  }
+  }
+
+.ajs-value {
+  background-color: lightgray;
+  width: 500px;
+  height: 20px;
+  display: inline-block; 
+  color:black;
+  font-weight: 24px;
+  font-style: italic;
+  text-align: center;
+  animation: growajs 3s ease-in-out forwards;
+animation-iteration-count: 3;
+  -webkit-animation:growajs 2s ease-in-out forwards;
+}
+
