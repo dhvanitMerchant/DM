@@ -50,7 +50,7 @@ app.use(bodyParser.urlencoded({
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 app.use('/css', express.static('assets/stylesheets/css'));
-app.use('/js', express.static('assets/js'));
+app.use('/js', express.static('assets/javascripts/js'));
 app.use('/img', express.static('assets/img'));
 
 
