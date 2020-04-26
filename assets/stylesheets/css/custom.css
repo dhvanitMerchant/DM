@@ -650,3 +650,11 @@ animation-iteration-count: 3;
   -webkit-animation:growajs 2s ease-in-out forwards;
 }
 
+@media screen and (max-width: 600px) {
+  .html-progress,.css-progress,.js-progress, .ajs-progress {
+  background-color: black;
+  width: 300px;
+  height: 20px;
+  display: inline-block;
+  }
+}
