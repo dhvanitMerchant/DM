@@ -15,7 +15,7 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-
+app.locals.moment = require('moment');
 // Adding cookies and sessions support to our app
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
