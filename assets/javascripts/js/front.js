@@ -202,10 +202,10 @@ $.getJSON("https://cpv2api.com/pens/showcase/j-w-v", function(resp){
 particlesJS("particles-js", {
   "particles": {
     "number": {
-      "value": 43,
+      "value": 23,
       "density": {
         "enable": true,
-        "value_area":300
+        "value_area":250
       }
     },
     "color": {
@@ -227,11 +227,11 @@ particlesJS("particles-js", {
       }
     },
     "opacity": {
-      "value": 0.188,
+      "value": 0.108,
       "random": false,
       "anim": {
         "enable": false,
-        "speed": 1,
+        "speed": 0.5,
         "opacity_min": 0.1,
         "sync": false
       }
@@ -532,3 +532,14 @@ particlesJS("particles-js-project", {
   },
   "retina_detect": true
 });
+
+
+new WOW().init();
+
+
+  	/* AUTHOR LINK */
+     $('.about-me-img').hover(function(){
+            $('.authorWindowWrapper').stop().fadeIn('fast').find('p').addClass('trans');
+        }, function(){
+            $('.authorWindowWrapper').stop().fadeOut('fast').find('p').removeClass('trans');
+        });

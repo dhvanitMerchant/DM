@@ -12,8 +12,10 @@ block content
         .row
           .col-md-12.col-sm-10
             p.italic.animated.flipInX.hidden-xs Hello!
-            h1.animated.fadeInUp I am Dhvanit Merchant
-            p.italic.animated.fadeInDown IT Support Analyst/ Software Developer
+            .typed
+              h1.headingStatement I am Dhvanit Merchant
+                
+            p.italic.animated.fadeInDown.heading Software Developer/ IT Support Analyst
 
   include ../partials/nav.pug
 
@@ -31,23 +33,23 @@ block content
   // about
   section#about.text
     .container
-      .col-md-12
-        .row
-          .col-sm-6
-            .LI-profile-badge(data-version='v1' data-size='large' data-locale='en_US' data-type='vertical' data-theme='light'         data-vanity='dhvanit24')
-              a.LI-simple-link(href='https://ca.linkedin.com/in/dhvanit24?trk=profile-badge') Dhvanit Merchant
-          .col-sm-6
-            #particles-js.back     
-            h2.heading.animated.fadeInUp About me
-            .typed
-              p.lead.headingStatement(data-animate='fadeInRight' data-os-animation-delay='0s') Something about me...!!!.
-            p
-              |Dedicated and Efficient Computer programmer analyst with 8+ months of experience in both Software Development and IT Support. Worked in exciting group projects during my whole career. Ability to break down complex issues into easy to understand "plain language". Seeking a challenging position to utilize my skills and knowledge in dynamic and rewarding corporate settings
-            p
-              | While achieving an Advanced Diploma in Georgian College as a Computer Programmer Analyst worked for Barriston Law Firm as a group project where I enhanced my Project Management, Scrum Process & Software Development skills. Working with Barriston gave me the experience to empower and motivate people towards a common purpose while learning and implementing new technologies.
-            p
-              | Well-known as a highly creative developer who can always be trusted to come up with a new approach. But I know that the user's thoughts come first, and I never try to impose my ideas on others. Instead, I spend a lot of time understanding the user before suggesting ideas. I can (and often do) work well alone, but I’m at my best collaborating with others.
-  // about end
+      
+      .row
+        .col-sm-6
+          .LI-profile-badge.hidden-lg.hidden-xl(data-version='v1' data-size='large' data-locale='en_US' data-type='horizontal' data-theme='light'         data-vanity='dhvanit24')
+            a.LI-simple-link(href='https://ca.linkedin.com/in/dhvanit24?trk=profile-badge') Dhvanit Merchant
+          
+          .LI-profile-badge.visible-lg.hidden-xs(data-version='v1' data-size='large' data-locale='en_US' data-type='vertical' data-theme='light'         data-vanity='dhvanit24')
+            a.LI-simple-link(href='https://ca.linkedin.com/in/dhvanit24?trk=profile-badge') Dhvanit Merchant
+               
+        .col-sm-6
+          h2.heading.animated.fadeInUp About me
+          .typed
+            p.lead.headingStatement(data-animate='fadeInRight' data-os-animation-delay='0s') Something about me...!!!.
+          p
+            |Dedicated and Efficient Computer programmer analyst with 8+ months of experience in both Software Development and IT Support. Worked in exciting group projects during my whole career. Ability to break down complex issues into easy to understand "plain language". Seeking a challenging position to utilize my skills and knowledge in dynamic and rewarding corporate settings
+          p
+            | Well-known as a highly creative developer who can always be trusted to come up with a new approach. But I know that the user's thoughts come first, and I never try to impose my ideas on others. Instead, I spend a lot of time understanding the user before suggesting ideas. I can (and often do) work well alone, but I’m at my best collaborating with others.
 
   
   // Experience
@@ -57,29 +59,28 @@ block content
       .container
         .row
           .col-sm-6
-            h2.heading1.animated.fadeInUp Skills
+            h2.headingSkill.animated.fadeInUp Skills
           .col-sm-6
             span
-              p.skills-heading.animated.fadeInUp HTML
+              h4.heading1.fadeInUp HTML || CSS3 || Javascript
             .html-progress
               span.progress-value 95%
             br
             span
-              p.skills-heading.animated.fadeInUp CSS3
+              h4.heading1.fadeInUp NodeJS
             
             .css-progress
               span.css-value 85%
             br
             span
-              p.skills-heading.animated.fadeInUp Javascript
+              h4.heading1.fadeInUp GIT
             .js-progress
               span.js-value 65%
             br
             span
-              p.skills-heading.animated.fadeInUp AngularJS
+              h4.heading1.fadeInUp AngularJS
             .ajs-progress
               span.ajs-value 70%
-            br
             br
             br
   // Services end
@@ -137,56 +138,78 @@ block content
   // Portfolio / gallery end
 
   // text page
-  section#text.section-inverse.hidden-xs(style="background-image: url('img/wexp.jpg');")
-    .overlay1
-    .content2
-      .container
-        .row
-          h2.heading.fadeInUp Work Experience
-          .col-md-12
-            p.lead Corporate Desktop Support Analyst
-            .row
-              .col-md-6
-                p.lead The Nationwide Group
-              .col-md-6
-                p.lead January 2019 &ndash; Present
-              ul(type='square')
-                li
-                  | Deliver Java/J2EE projects and releases working as part of a team, including Product Manager, Business Analysts,
-                  br
-                  |  QA Analysts, and other developers
-                li
-                  | Deliver on maintenance and enhancement requests
-                li 
-                  | Provide enhancements and support for existing Java/J2EE applications 
-                li 
-                  | Test web and/or enterprise applications 
-                li
-                  | Work in a team environment using a structured development process
-                li 
-                  | Contributed to servlet-based application development.
-          .container
-            .row
-              .col-md-12
-                p.leads.lead Corporate Desktop Support Analyst
-                .row
-                  .col-md-6
-                    p.lead The Nationwide Group
-                  .col-md-6
-                    p.lead May 2018 &ndash; September 2018
-                  ul(type='square')
-                    li
-                      | Assist all Corporate users with problems relating to peripheral devices (printers, monitors, PC&rsquo;s,
-                      | etc.) and software applications.
-                    li
-                      | Answer technical help desk calls in a pleasant manner and aim for first contact resolution.
-                    li Assist in the support of corporate field mobile technologies.
-                    li
-                      | Monitor staff self-created help desk tickets and action and/or route issues for resolution.
-                    li
-                      | Perform 1st and 2nd level support for Client software and hardware issues and diagnose
-                      | potential areas of failure.
-  // text page end
+
+  //New Exper
+  section.section.expSec
+      .contentExp
+        #particles-js.back
+        .container
+          .row
+            h2.heading.text-center.fadeInUp#xp Work Experience
+            
+            .fullWidth.eight.columns
+            ul.cbp_tmtimeline
+              li
+                .cbp_tmicon.cbp_tmicon-phone
+                  i.faPra.fa-briefcase
+                .cbp_tmlabel.wow.fadeInRight.animated
+                  h3 Software developer
+                  .date
+                    i.fa.fa-calendar
+                    | January 2019 - April 2019
+                  h4
+                    i.fa.fa-suitcase
+                    | The Nationwide Group
+                  p
+                    i.fa.fa-cog.fa-spin.fa-fw
+                    i Deliver Java/J2EE projects and releases working as part of a team, including Product Manager, Business Analysts, QA Analysts, and other developers
+                  p 
+                    i.fa.fa-cog.fa-spin.fa-fw
+                    i Deliver on maintenance and enhancement requests
+                  p 
+                    i.fa.fa-cog.fa-spin.fa-fw
+                    
+                    i Provide enhancements and support for existing Java/J2EE applications 
+                  p 
+                    i.fa.fa-cog.fa-spin.fa-fw
+                    
+                    i Test web and/or enterprise applications 
+                  p 
+                    i.fa.fa-cog.fa-spin.fa-fw
+                    
+                    i Work in a team environment using a structured development process
+                  p  
+                    i.fa.fa-cog.fa-spin.fa-fw
+                    
+                    i Contributed to servlet-based application development.
+              li
+                .cbp_tmicon.cbp_tmicon-screen
+                  i.faPra.fa-briefcase
+                .cbp_tmlabel.wow.fadeInRight.animated
+                  h3 IT Support Analyst
+                  h4
+                    i.fa.fa-suitcase
+                    | The Nationwide Group
+                  .date
+                    i.fa.fa-calendar
+                    | May 2018 - September 2018
+                  p
+                    i.fa.fa-cog.fa-spin.fa-fw
+                    i Assist all Corporate users with problems relating to peripheral devices (printers, monitors, PC&rsquo;s, etc.) and software applications.
+                  p
+                    i.fa.fa-cog.fa-spin.fa-fw
+                    i Answer technical help desk calls in a pleasant manner and aim for first contact resolution. 
+                  p
+                    i.fa.fa-cog.fa-spin.fa-fw
+                    i Assist in the support of corporate field mobile technologies. 
+                  p
+                    i.fa.fa-cog.fa-spin.fa-fw
+                    i Monitor staff self-created help desk tickets and action and/or route issues for resolution.
+               
+                  p
+                    i.fa.fa-cog.fa-spin.fa-fw
+                    i  Perform 1st and 2nd level support for Client software and hardware issues and diagnose potential areas of failure.
+                         
   // contact
   section#contact.text-page(style='background-color: #fff;')
      
@@ -203,15 +226,15 @@ block content
               form#contact-form.contact-form(action=(home ? null : '/sendFeedback'), method='post')
                 .controls
                   .row
-                    .form-group.animated.fadeInRight
+                    .form-group.animated.zoomIn
                       input.form-control(type='text' name='author[firstName]' placeholder='Enter your firstname' required='required',  value=(null))
-                    .form-group.animated.fadeInLeft
+                    .form-group.animated.zoomIn
                       input.form-control(type='text' name='author[lastName]' placeholder='Enter your lastname'
                       required='required',  value=(null))
-                    .form-group.animated.bounceInDown
+                    .form-group.animated.zoomIn
                       input.form-control(type='email' name='author[email]' placeholder='Enter your email' 
                       required='required', value=(null))
-                    .form-group.animated.bounceInDown
+                    .form-group.animated.zoomIn
                       input.form-control(type='text' name='author[comments]' placeholder='Enter your feedback' required='required',  value=(null))
                     .form-group
                       .text-center
