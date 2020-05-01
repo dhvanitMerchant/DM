@@ -40,7 +40,7 @@ Author.findOne({
       }
     }
   })();
-console.log('Message sent: %s');
+  console.log(req.body.author.comments)
 
 
     req.flash('success', 'Thank you for your Feedback 😍🤗');

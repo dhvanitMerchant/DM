@@ -7,6 +7,8 @@ mongoose.connect(process.env.DB_URI, {
     user: process.env.DB_USER,
     password: process.env.DB_PASS
   },
+
+  useUnifiedTopology: true,
   useNewUrlParser: true
 }).catch(err => console.error(`ERROR: ${err}`));
 //End Mongoose
