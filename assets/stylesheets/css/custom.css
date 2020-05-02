@@ -655,6 +655,10 @@ animation-iteration-count: 3;
 
 
 @media screen and (max-width: 600px) {
+
+  section > .text-page{
+    margin-top: -20px;
+  }
 .cbp_tmtimeline{
   align-items: center;
 }
