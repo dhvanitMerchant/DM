@@ -1249,3 +1249,17 @@ animation-iteration-count: 3;
 }
 
 
+
+/**Back-to-top
+*/
+.back-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: inline-block;  
+  padding: 1em;
+  margin: 1em;
+}
+.back-to-top:hover {
+  cursor: pointer;
+}
