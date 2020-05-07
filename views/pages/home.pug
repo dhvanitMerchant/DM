@@ -46,6 +46,7 @@ block content
                
         .col-sm-6
           h2.heading.animated.fadeInUp About me
+
           .typed
             p.lead.headingStatement(data-animate='fadeInRight' data-os-animation-delay='0s') Something about me...!!!.
           p
@@ -86,9 +87,36 @@ block content
             br
             br
   // Services end
+  //Project Stats
+  section#portfolio.sectiontitle
+    h2.heading.text-center.fadeInUp Projects statistics
+    #projectFacts.sectionClass.container
+      .fullWidth.eight.columns
+        .projectFactsWrap
+          .item.wow.fadeInUpBig.animated.animated(data-number='6' style='visibility: visible;')
+            i.fa.fa-briefcase
+            p#number1.number 6
+            span
+            p Projects done
+          .item.wow.fadeInUpBig.animated.animated(data-number='50' style='visibility: visible;')
+            i.fa.fa-smile-o
+            p#number2.number 55
+            span
+            p Happy clients
+          .item.wow.fadeInUpBig.animated.animated(data-number='240' style='visibility: visible;')
+            i.fa.fa-coffee
+            p#number3.number 240
+            span
+            p Cups of coffee
+          .item.wow.fadeInUpBig.animated.animated(data-number='404' style='visibility: visible;')
+            i.fa.fa-ban
+            p#number4.number 404
+            span
+            p Bad Reviews
+
   
   // Portfolio / gallery
-  section#portfolio.gallery
+  section#portfolio.gallery.hidden
     .project-heading
       #particles-js-project.back  
       h2.heading.text-center.fadeInUp Projects
@@ -164,20 +192,21 @@ block content
                 i.fa.fa-suitcase
                 | The Nationwide Group
               
-              p 
-                i.fa.fa-cog.fa-spin.fa-fw
-                i Delivered Java/J2EE projects and releases working in a team-based environment. 
+              .duties
+                p 
+                  i.fa.fa-cog.fa-spin.fa-fw
+                  i Delivered Java/J2EE projects and releases working in a team-based environment. 
 
-              p 
-                i.fa.fa-cog.fa-spin.fa-fw
-                i Documented recommended system changes through JIRA ticketing system 
-              p 
-                i.fa.fa-cog.fa-spin.fa-fw
-                i Liaised with Marketing Team to approve new look and feel of the system 
-              p 
-                i.fa.fa-cog.fa-spin.fa-fw
-                i Worked across new technologies to improve the UI of the web applications for clients 
-              
+                p 
+                  i.fa.fa-cog.fa-spin.fa-fw
+                  i Documented recommended system changes through JIRA ticketing system 
+                p 
+                  i.fa.fa-cog.fa-spin.fa-fw
+                  i Liaised with Marketing Team to approve new look and feel of the system 
+                p 
+                  i.fa.fa-cog.fa-spin.fa-fw
+                  i Worked across new technologies to improve the UI of the web applications for clients 
+                
          
           li
             .cbp_tmicon.cbp_tmicon-screen.hidden-xs
@@ -191,20 +220,21 @@ block content
                 i.fa.fa-calendar
                 | May 2018 - September 2018
               
-              p
-                i.fa.fa-cog.fa-spin.fa-fw
-                i Answer technical help desk calls in a pleasant manner and aim for first contact resolution. 
-              p
-                i.fa.fa-cog.fa-spin.fa-fw
-                i Assist in the support of corporate field mobile technologies. 
-              p
-                i.fa.fa-cog.fa-spin.fa-fw
-                i Monitor staff self-created help desk tickets and action and/or route issues for resolution.
-            
-              p
-                i.fa.fa-cog.fa-spin.fa-fw
-                i Perform 1st and 2nd level support for Client software and hardware issues and diagnose potential areas of failure.
-                        
+              .duties
+                p
+                  i.fa.fa-cog.fa-spin.fa-fw
+                  i Answer technical help desk calls in a pleasant manner and aim for first contact resolution. 
+                p
+                  i.fa.fa-cog.fa-spin.fa-fw
+                  i Assist in the support of corporate field mobile technologies. 
+                p
+                  i.fa.fa-cog.fa-spin.fa-fw
+                  i Monitor staff self-created help desk tickets and action and/or route issues for resolution.
+              
+                p
+                  i.fa.fa-cog.fa-spin.fa-fw
+                  i Perform 1st and 2nd level support for Client software and hardware issues and diagnose potential areas of failure.
+                          
   // contact
   section#contact(style='background-color: #fff;')
      

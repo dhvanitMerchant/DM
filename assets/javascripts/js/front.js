@@ -1,3 +1,41 @@
+
+	$.fn.jQuerySimpleCounter = function( options ) {
+    var settings = $.extend({
+        start:  0,
+        end:    100,
+        easing: 'swing',
+        duration: 400,
+        complete: ''
+    }, options );
+
+    var thisElement = $(this);
+
+    $({count: settings.start}).animate({count: settings.end}, {
+    duration: settings.duration,
+    easing: settings.easing,
+    step: function() {
+      var mathCount = Math.ceil(this.count);
+      thisElement.text(mathCount);
+    },
+    complete: settings.complete
+  });
+};
+
+
+$('#number1').jQuerySimpleCounter({end: 7,duration: 3000});
+$('#number2').jQuerySimpleCounter({end: 55,duration: 3000});
+$('#number3').jQuerySimpleCounter({end: 246,duration: 2000});
+$('#number4').jQuerySimpleCounter({end: 404,duration: 2500});
+
+
+
+  /* AUTHOR LINK */
+   $('.about-me-img').hover(function(){
+          $('.authorWindowWrapper').stop().fadeIn('fast').find('p').addClass('trans');
+      }, function(){
+          $('.authorWindowWrapper').stop().fadeOut('fast').find('p').removeClass('trans');
+      });
+
 /** @license
  * DHTML Snowstorm! JavaScript-based snow for web pages
  * Making it snow on the internets since 2003. You're welcome.
@@ -17,8 +55,8 @@ var snowStorm = (function(window, document) {
 
   this.autoStart = true;          // Whether the snow should start automatically or not.
   this.excludeMobile = true;      // Snow is likely to be bad news for mobile phones' CPUs (and batteries.) Enable at your own risk.
-  this.flakesMax = 628;           // Limit total amount of snow made (falling + sticking)
-  this.flakesMaxActive = 664;      // Limit amount of snow falling at once (less = lower CPU use)
+  this.flakesMax = 500;           // Limit total amount of snow made (falling + sticking)
+  this.flakesMaxActive = 500;      // Limit amount of snow falling at once (less = lower CPU use)
   this.animationInterval = 50;    // Theoretical "miliseconds per frame" measurement. 20 = fast + smooth, but high CPU use. 50 = more conservative, but slower
   this.useGPU = true;             // Enable transform-based hardware acceleration, reduce CPU load.
   this.className = null;          // CSS class name for further customization on snow elements
