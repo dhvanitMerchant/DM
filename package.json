@@ -29,6 +29,6 @@
     "nodemailer-sendgrid-transport": "^0.2.0",
     "nodemon": "^1.19.1",
     "pug": "^2.0.3",
-    "set-value": ">=2.0.1"
+    "set-value": ">=4.0.1"
   }
 }
